@@ -1,0 +1,16 @@
+.Action {
+  background: none;
+  border: none;
+  color: blue;
+  font: inherit;
+  text-decoration: underline;
+  transition: background-color 200ms linear;
+}
+
+.Action:hover {
+  cursor: pointer;
+}
+
+.Action:active {
+  background-color: lightBlue;
+}
