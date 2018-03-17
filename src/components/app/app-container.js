@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
+import { tickTimer } from '../../reducers/disabled';
 import App from './app';
 
 function mapDispatchToProps(dispatch) {
   return {
-    onTimer: (time) => console.log(time),
+    onTimer: time => dispatch(tickTimer(time)),
   };
 }
 
