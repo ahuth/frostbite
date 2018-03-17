@@ -1,0 +1,6 @@
+.Cooldown-bar {
+  background-color: blue;
+  display: inline-block;
+  height: 8px;
+  text-align: left;
+}
