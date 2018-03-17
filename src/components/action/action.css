@@ -15,3 +15,8 @@
 .Action:active {
   background-color: lightBlue;
 }
+
+.Action:disabled {
+  color: grey;
+  cursor: not-allowed;
+}
