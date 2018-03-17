@@ -1,6 +1,7 @@
 .Action {
   background: none;
   border: none;
+  border-radius: 3px;
   color: blue;
   font: inherit;
   text-decoration: underline;
