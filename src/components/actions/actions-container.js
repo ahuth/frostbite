@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Actions from './actions';
-import { gatherWood } from '../../reducers/inventory';
+import { gatherWood } from '../../actions';
 
 function mapStateToProps(state) {
   return {

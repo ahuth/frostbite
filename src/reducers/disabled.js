@@ -15,10 +15,3 @@ export default function reducer(state = initialState, action) {
       return state;
   }
 }
-
-export function tickTimer(time) {
-  return {
-    type: 'TIMER_TICKED',
-    payload: { time },
-  };
-}

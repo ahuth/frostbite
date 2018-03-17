@@ -10,10 +10,3 @@ export default function reducer(state = initialState, action) {
       return state;
   }
 }
-
-export function gatherWood(amount) {
-  return {
-    type: 'WOOD_GATHERED',
-    payload: { amount },
-  };
-}

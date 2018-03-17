@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import { tickTimer } from '../../reducers/disabled';
 import App from './app';
+import { tickTimer } from '../../actions';
 
 function mapDispatchToProps(dispatch) {
   return {
