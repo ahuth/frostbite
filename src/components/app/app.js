@@ -1,5 +1,5 @@
 import React from 'react';
-import Action from '../action';
+import Actions from '../actions';
 import A11yIntention from '../a11y-intention';
 import Inventory from '../inventory';
 import Timer from '../timer';
@@ -11,7 +11,7 @@ export default class App extends React.Component {
       <div className="App">
         <Timer interval={1500} callback={time => console.log(time)} />
         <A11yIntention>
-          <Action text="Gather wood" />
+          <Actions />
           <Inventory />
         </A11yIntention>
       </div>
