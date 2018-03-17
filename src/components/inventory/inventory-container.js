@@ -3,6 +3,7 @@ import Inventory from './inventory';
 
 function mapStateToProps(state) {
   return {
+    huts: state.inventory.huts,
     wood: state.inventory.wood,
   };
 }
