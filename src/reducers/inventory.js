@@ -1,4 +1,6 @@
-const initialState = {};
+const initialState = {
+  wood: 0,
+};
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
