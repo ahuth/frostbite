@@ -2,10 +2,16 @@ import { connect } from 'react-redux';
 import Actions from './actions';
 import { gatherWood } from '../../reducers/inventory';
 
+function mapStateToProps(state) {
+  return {
+    woodDisabled: !!state.disabled.gatherWood,
+  };
+}
+
 function mapDispatchToProps(dispatch) {
   return {
     onWoodClick: () => dispatch(gatherWood(1)),
   };
 }
 
-export default connect(null, mapDispatchToProps)(Actions);
+export default connect(mapStateToProps, mapDispatchToProps)(Actions);

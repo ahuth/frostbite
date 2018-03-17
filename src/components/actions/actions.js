@@ -1,10 +1,10 @@
 import React from 'react';
 import Action from '../action';
 
-export default function Actions({ onWoodClick }) {
+export default function Actions({ onWoodClick, woodDisabled }) {
   return (
     <div>
-      <Action onClick={onWoodClick} text="Gather wood" />
+      <Action disabled={woodDisabled} onClick={onWoodClick} text="Gather wood" />
     </div>
   );
 }
