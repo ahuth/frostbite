@@ -4,8 +4,8 @@ import { buildHut, gatherWood } from '../../actions';
 
 function mapStateToProps(state) {
   return {
-    hutDisabled: !!state.disabled.buildHut,
-    woodDisabled: !!state.disabled.gatherWood,
+    hutDisabled: !!state.huts.disabled,
+    woodDisabled: !!state.wood.disabled,
   };
 }
 

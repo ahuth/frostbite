@@ -1,4 +1,4 @@
-export default function createReducer(key, disableType, enableInterval) {
+export default function createDisabledReducer(disableType, enableInterval) {
   const initialState = false;
 
   return function reducer(state = initialState, action) {

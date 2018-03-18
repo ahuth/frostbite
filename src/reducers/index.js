@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import disabled from './disabled';
-import inventory from './inventory';
+import huts from './huts';
+import wood from './wood';
 
 export default combineReducers({
-  disabled,
-  inventory,
+  huts,
+  wood,
 });
