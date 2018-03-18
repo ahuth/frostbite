@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import Actions from './actions';
-import { buildHut, gatherWood } from '../../actions';
+import { buildHut } from '../../reducers/huts';
+import { gatherWood } from '../../reducers/wood';
 
 function mapStateToProps(state) {
   return {
