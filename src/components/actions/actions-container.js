@@ -1,11 +1,13 @@
 import { connect } from 'react-redux';
 import Actions from './actions';
 import { buildHut, gatherWood } from '../../actions';
+import { getHutsDisabled } from '../../reducers/huts';
+import { getWoodDisabled } from '../../reducers/wood';
 
 function mapStateToProps(state) {
   return {
-    hutDisabled: !!state.huts.disabled,
-    woodDisabled: !!state.wood.disabled,
+    hutDisabled: !!getHutsDisabled(state),
+    woodDisabled: !!getWoodDisabled(state),
   };
 }
 

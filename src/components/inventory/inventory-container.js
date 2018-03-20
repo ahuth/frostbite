@@ -1,10 +1,12 @@
 import { connect } from 'react-redux';
 import Inventory from './inventory';
+import { getHutsInventory } from '../../reducers/huts';
+import { getWoodInventory } from '../../reducers/wood';
 
 function mapStateToProps(state) {
   return {
-    huts: state.huts.inventory,
-    wood: state.wood.inventory,
+    huts: getHutsInventory(state),
+    wood: getWoodInventory(state),
   };
 }
 
