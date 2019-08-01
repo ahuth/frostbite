@@ -4,13 +4,12 @@
   "license": "MIT",
   "homepage": "https://ahuth.github.io/frostbite",
   "scripts": {
-    "predeploy": "yarn run build",
+    "build": "react-scripts build",
     "deploy": "gh-pages -d build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
+    "predeploy": "yarn run build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
     "types": "tsc --noEmit"
   },
   "browserslist": {
