@@ -1,5 +1,6 @@
 import React from 'react';
+import Inventory from './Inventory';
 
 export default function App() {
-  return <span>hello world</span>;
+  return <Inventory huts={1} wood={2} />;
 }
