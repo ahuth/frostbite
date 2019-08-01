@@ -1,19 +1,28 @@
-.button {
+.base {
   background: none;
   border: none;
   border-radius: 3px;
-  color: blue;
   cursor: pointer;
   font: inherit;
   text-decoration: underline;
   transition: background-color 200ms linear;
 }
 
-.button:active {
+.base:active {
   background-color: lightBlue;
 }
 
-.button:disabled {
+.base:disabled {
   color: grey;
   cursor: not-allowed;
+}
+
+.button {
+  composes: base;
+  color: black;
+}
+
+.inverted {
+  composes: base;
+  color: white;
 }

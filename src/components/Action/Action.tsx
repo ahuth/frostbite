@@ -5,11 +5,12 @@ import styles from './Action.module.css';
 
 type Props = {
   cooldown: number,
+  inverted?: boolean,
   onClick: () => void,
   text: string,
 };
 
-export default function Action({ cooldown, onClick, text }: Props) {
+export default function Action({ cooldown, inverted = false, onClick, text }: Props) {
   const [disabled, setDisabled] = useState(false);
 
   function handleClick() {
@@ -24,7 +25,7 @@ export default function Action({ cooldown, onClick, text }: Props) {
   );
 
   return (
-    <button className={styles.button} disabled={disabled} onClick={handleClick}>
+    <button className={inverted ? styles.inverted : styles.button} disabled={disabled} onClick={handleClick}>
       {text}
       <Progress active={disabled} time={cooldown} />
     </button>
