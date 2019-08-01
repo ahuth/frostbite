@@ -1,6 +1,5 @@
-import React, { useCallback, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Progress from '../Progress';
-import useTimeout from '../../hooks/useTimeout';
 import styles from './Action.module.css';
 
 type Props = {
@@ -18,11 +17,12 @@ export default function Action({ cooldown, inverted = false, onClick, text }: Pr
     setDisabled(true);
   }
 
-  useTimeout(
-    useCallback(() => setDisabled(false), []),
-    cooldown,
-    disabled,
-  );
+  useEffect(() => {
+    if (disabled) {
+      const id = window.setTimeout(() => setDisabled(false), cooldown);
+      return () => window.clearTimeout(id);
+    }
+  }, [cooldown, disabled]);
 
   return (
     <button className={inverted ? styles.inverted : styles.button} disabled={disabled} onClick={handleClick}>
