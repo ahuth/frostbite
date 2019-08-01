@@ -1,0 +1,19 @@
+.button {
+  background: none;
+  border: none;
+  border-radius: 3px;
+  color: blue;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+  transition: background-color 200ms linear;
+}
+
+.button:active {
+  background-color: lightBlue;
+}
+
+.button:disabled {
+  color: grey;
+  cursor: not-allowed;
+}
