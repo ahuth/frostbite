@@ -6,6 +6,7 @@
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -23,6 +24,23 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "always-multiline"
+        }
+      ],
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"]
+    }
   },
   "dependencies": {
     "react": "^16.8.6",
