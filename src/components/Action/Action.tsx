@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Progress from '../Progress';
 import useTimeout from '../../hooks/useTimeout';
 import styles from './Action.module.css';
@@ -18,7 +18,7 @@ export default function Action({ cooldown, onClick, text }: Props) {
   }
 
   useTimeout(
-    () => setDisabled(false),
+    useCallback(() => setDisabled(false), []),
     cooldown,
     disabled,
   );
