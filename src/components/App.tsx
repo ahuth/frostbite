@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import Action from './Action';
 import Inventory from './Inventory';
 import useIncrement from '../hooks/useIncrement';
@@ -16,6 +16,11 @@ export default function App() {
       backgroundColor: backgroundColors[fire],
     };
   }, [fire]);
+
+  useEffect(() => {
+    const id = window.setTimeout(lowerFire, 25000);
+    return () => window.clearTimeout(id);
+  }, [fire, lowerFire]);
 
   return (
     <div style={backgroundStyles}>
