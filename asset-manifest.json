@@ -1,6 +1,15 @@
 {
-  "main.css": "static/css/main.16d80030.css",
-  "main.css.map": "static/css/main.16d80030.css.map",
-  "main.js": "static/js/main.2488dfca.js",
-  "main.js.map": "static/js/main.2488dfca.js.map"
+  "files": {
+    "main.css": "/frostbite/static/css/main.ce9e6b8a.chunk.css",
+    "main.js": "/frostbite/static/js/main.39702a25.chunk.js",
+    "main.js.map": "/frostbite/static/js/main.39702a25.chunk.js.map",
+    "runtime~main.js": "/frostbite/static/js/runtime~main.61aa38ef.js",
+    "runtime~main.js.map": "/frostbite/static/js/runtime~main.61aa38ef.js.map",
+    "static/js/2.abeba369.chunk.js": "/frostbite/static/js/2.abeba369.chunk.js",
+    "static/js/2.abeba369.chunk.js.map": "/frostbite/static/js/2.abeba369.chunk.js.map",
+    "index.html": "/frostbite/index.html",
+    "precache-manifest.b8f80099d78e3e2dc3fc86215bbd1280.js": "/frostbite/precache-manifest.b8f80099d78e3e2dc3fc86215bbd1280.js",
+    "service-worker.js": "/frostbite/service-worker.js",
+    "static/css/main.ce9e6b8a.chunk.css.map": "/frostbite/static/css/main.ce9e6b8a.chunk.css.map"
+  }
 }
