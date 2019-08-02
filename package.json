@@ -5,7 +5,7 @@
   "homepage": "https://ahuth.github.io/frostbite",
   "scripts": {
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build --git $(which git)",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
     "predeploy": "yarn run build",
     "start": "react-scripts start",
